@@ -5,9 +5,9 @@
 Cy uses serveral types of classes, listed below:
 - Model
 - Config
-- Class
 - Transient
 - Singleton
+- Class
 
 ## Model
 A model is a collection of properties *only*.
@@ -35,9 +35,6 @@ my-config.settings.json
 }
 ```
 
-## Class
-A standard class, contains methods and properties. A factory must be used to create an instance of this class.
-
 ## Transient
 Again a standard class but instances of this can be injected directly into your classes.
 
@@ -45,6 +42,9 @@ Again a standard class but instances of this can be injected directly into your 
 transient MyTransient {
     i8 SmallInteger
     i32 LargerInteger
+    i32 Add() {
+        return LargerInteger + SmallInteger
+    }
 }
 
 transient MyOtherTransient {
@@ -58,3 +58,30 @@ transient MyOtherTransient {
 ## Singleton
 Again a standard class but a single instance of this can be injected directly into your classes. So if multiple classes ask for an injected instance they will each get a reference to the same instance.
 
+## Class
+A standard class, contains methods and properties. A factory must be used to create an instance of this class.
+
+```
+class MyClass {
+    i8 SmallInteger
+    i32 LargerInteger
+    MyClass Factory() {                    // is this a nice way to do this? I do want the factory to be part of the class...
+        return MyClass {
+            SmallInteger = 42,
+            LargerInteger = 101
+        }
+    }
+    i32 Add() {
+        return LargerInteger + SmallInteger
+    }
+}
+
+transient MyTransient {
+    MyClass MyClass
+    MyOtherTransient MyOtherTransient
+    MyTransient(MyClass myClass, MyOtherTransient myOtherTransient) {
+        MyClass = myClass.Factory()
+        MyOtherTransient = myOtherTransient
+    }
+}
+```
