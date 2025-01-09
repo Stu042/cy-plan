@@ -3,8 +3,8 @@
 [Home](index)
 
 ## Basic Types
-`void` a none value, i.e. return nothing.
-`bool` true or false value.
+- `void` a none value, i.e. return nothing.
+- `bool` true or false value.
 
 ## Numbers
 | Name   | Type    | Size (in bytes) | Signed |
