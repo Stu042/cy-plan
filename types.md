@@ -33,5 +33,5 @@
 - `utf8` UTF8 encoded, null terminated string.
 
 ### Members
-- `Size()` Will return the size in bytes the whole string occupies, including null termination.
-- `Count()` Will return character count string holds, `str.Count()` will return number of ASCII chars + 1 for the null terminater, the same as `str.Size()`. `utf8.Count()` could return a smaller value than `utf8.Size()` as some characters can require more than one byte to represent it, but will also include the null terminator.
+- `Size()` Will return the size in bytes the whole string occupies, including null terminator.
+- `Count()` Will return character count string holds, `str.Count()` will return number of ASCII chars + 1 for the null terminator, the same as `str.Size()`. `utf8.Count()` could return a smaller value than `utf8.Size()` as some characters can require more than one byte to represent it, but will also include the null terminator.
