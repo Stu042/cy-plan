@@ -20,9 +20,9 @@
 
 ### Constants
 
-- `Min` - Minimum value this type holds, example usage i8.Min will return -127
-- `Max` - Maximum value this type holds, example usage i16.Max will return 32767
-- `Size` - Size in bytes this type uses, example usage i32.Size will return 4
+- `Min` Minimum value this type holds, example usage i8.Min will return -127
+- `Max` Maximum value this type holds, example usage i16.Max will return 32767
+- `Size` Size in bytes this type uses, example usage i32.Size will return 4
 
 ## Strings
 
@@ -31,5 +31,5 @@
 
 ### Members
 
-`Size` Will return the size in bytes the whole string occupies, including null termination.
-`Count` Will return character count string holds, str.Count will return number of ASCII chars + 1 for the null terminater. utf8.Size could return a smaller value as some characters require more than one byte to represent it, but will also include th enull terminator.
+- `Size` Will return the size in bytes the whole string occupies, including null termination.
+- `Count` Will return character count string holds, str.Count will return number of ASCII chars + 1 for the null terminater. utf8.Size could return a smaller value as some characters require more than one byte to represent it, but will also include th enull terminator.
