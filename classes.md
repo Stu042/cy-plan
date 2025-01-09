@@ -36,7 +36,7 @@ my-config.settings.json
 ```
 
 ## Transient
-Again a standard class but instances of this can be injected directly into your classes.
+A standard class, but instances of this can be injected directly into your classes. Contains methods and properties.
 
 ```
 transient MyTransient {
@@ -56,7 +56,7 @@ transient MyOtherTransient {
 ```
 
 ## Singleton
-Again a standard class but a single instance of this can be injected directly into your classes. So if multiple classes ask for an injected instance they will each get a reference to the same instance.
+Again a standard class but a single instance of this can be injected directly into your classes. So if multiple classes ask for an injected instance they will each get a reference to the same instance. Contains methods and properties.
 
 ## Class
 A standard class, contains methods and properties. A factory must be used to create an instance of this class.
