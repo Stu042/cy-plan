@@ -1,3 +1,4 @@
 # Cy, Syntax, Semantics, and Features
 
-[Classes](classes)
+- [Types](types)
+- [Classes](classes)
