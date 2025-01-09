@@ -70,7 +70,7 @@ transient ATransient {
 class MyClass {
     i8 SmallInteger
     i32 LargerInteger
-    ATransient aTransient
+    ATransient ATransient
     MyClass(i8 small, i32 larger)(ATransient aTransient) {
         return MyClass {
             SmallInteger = small,
