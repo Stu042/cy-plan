@@ -1,6 +1,6 @@
 # Classes
 
-[Home](index)
+[Home](index.md)
 
 Cy uses serveral types of classes, listed below:
 - Model

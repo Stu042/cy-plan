@@ -1,10 +1,15 @@
 # Types
 
-[Home](index)
+[Home](index.md)
+
 
 ## Basic Types
 - `void` a none value, i.e. return nothing.
 - `bool` true or false value.
+
+### Members
+- `Size()` Size in bytes this type uses, example usage `bool.Size()` will return 1 and `void.Size()` will return 0.
+
 
 ## Numbers
 | Name   | Type    | Size (in bytes) | Signed |
@@ -27,6 +32,7 @@
 
 ### Members
 - `Size()` Size in bytes this type uses, example usage `i32.Size()` will return 4
+
 
 ## Strings
 - `str` ASCII encoded, null terminated string.

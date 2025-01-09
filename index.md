@@ -7,5 +7,5 @@ Cy is a C like language - yes, yet another one. Its purpose is to provide easy t
 
 ## Types, Syntax and Semantics
 
-- [Types](types)
-- [Classes](classes)
+- [Types](types.md)
+- [Classes](classes.md)
