@@ -1,5 +1,7 @@
 # Classes
 
+[Home](index)
+
 Cy uses serveral types of classes, listed below:
  - Model
  - Config
