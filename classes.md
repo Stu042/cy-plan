@@ -82,7 +82,7 @@ transient MyTransient {
     MyClass MyClass
     MyOtherTransient MyOtherTransient
     MyTransient(MyClass myClass, MyOtherTransient myOtherTransient) {
-        MyClass = myClass.Factory()
+        MyClass = Factory(myClass)
         MyOtherTransient = myOtherTransient
     }
 }
