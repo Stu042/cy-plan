@@ -63,13 +63,18 @@ Again a standard class but a single instance of this can be injected directly in
 A standard class, contains methods and properties. A factory must be used to create an instance of this class.
 
 ```
+transient ATransient {
+    i32 LargerInteger
+}
+
 class MyClass {
     i8 SmallInteger
     i32 LargerInteger
-    MyClass() {
+    ATransient aTransient
+    MyClass(i8 small, i32 larger)(ATransient aTransient) {
         return MyClass {
-            SmallInteger = 42,
-            LargerInteger = 101
+            SmallInteger = small,
+            LargerInteger = larger
         }
     }
     i32 Add() {
@@ -78,12 +83,12 @@ class MyClass {
 }
 
 
-transient MyTransient {
+transient MyOtherTransient {
     MyClass MyClass
-    MyOtherTransient MyOtherTransient
-    MyTransient(MyClass myClass, MyOtherTransient myOtherTransient) {
-        MyClass = Factory(myClass)
-        MyOtherTransient = myOtherTransient
+    MyTransient MyTransient
+    MyTransient(MyClass myClass, MyTransient myTransient) {
+        MyClass = myClass(1, 2)
+        MyTransient = myTransient
     }
 }
 ```
