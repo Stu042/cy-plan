@@ -47,6 +47,7 @@ transient MyTransient {
     }
 }
 
+
 transient MyOtherTransient {
     MyTransient MyTransient
     MyOtherTransient(MyTransient myTransient) {
@@ -65,7 +66,7 @@ A standard class, contains methods and properties. A factory must be used to cre
 class MyClass {
     i8 SmallInteger
     i32 LargerInteger
-    MyClass Factory() {                    // is this a nice way to do this? I do want the factory to be part of the class...
+    MyClass() {
         return MyClass {
             SmallInteger = 42,
             LargerInteger = 101
@@ -75,6 +76,7 @@ class MyClass {
         return LargerInteger + SmallInteger
     }
 }
+
 
 transient MyTransient {
     MyClass MyClass
