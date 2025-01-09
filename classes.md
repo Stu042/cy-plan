@@ -74,7 +74,8 @@ class MyClass {
     MyClass(i8 small, i32 larger)(ATransient aTransient) {
         return MyClass {
             SmallInteger = small,
-            LargerInteger = larger
+            LargerInteger = larger,
+            ATransient = aTransient
         }
     }
     i32 Add() {
