@@ -88,7 +88,7 @@ Again a standard class but a single instance of this can be injected directly in
 
 A standard class, contains methods and properties. A factory must be used to create an instance of this class. Class is the assumed class type, and hence has no requirement for the name class.
 
-An unusal idiosyncrasy of class is the constructor has two input groups, the first is for user input and the second is for injected input. Both are required but can be empty.
+An unusal idiosyncrasy of class is the constructor has two input groups, the first is for user input and the second is for injected input. Only the first is required and can be empty.
 
 ```
 transient ATransient {
