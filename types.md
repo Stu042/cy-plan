@@ -5,7 +5,7 @@
 
 ## Basic Types
 
-- `void` a none value, i.e. return nothing.
+- `void` a non value, i.e. return nothing.
 - `bool` true or false value.
 
 ### Members
