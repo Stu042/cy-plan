@@ -1,17 +1,19 @@
+# Types
+
 [Home](index.md)
 
 
-# Basic Types
+## Basic Types
 
 - `void` a non value, i.e. return nothing.
 - `bool` true or false value.
 
-## Members
+### Members
 
 - `Size()` Size in bytes this type uses, example usage `bool.Size()` will return 1 and `void.Size()` will return 0.
 
 
-# Numbers
+## Numbers
 
 | Name   | Type    | Size (in bytes) | Signed |
 |--------|---------|-----------------|--------|
@@ -27,22 +29,22 @@
 | `f32`  | float   | 4               | Yes    |
 | `f64`  | float   | 8               | Yes    |
 
-## Constants
+### Constants
 
 - `Min` Minimum value this type holds, example usage `i8.Min` will return -127
 - `Max` Maximum value this type holds, example usage `i16.Max` will return 32767
 
-## Members
+### Members
 
 - `Size()` Size in bytes this type uses, example usage `i32.Size()` will return 4
 
 
-# Strings
+## Strings
 
 - `str` ASCII encoded, null terminated string.
 - `utf8` UTF8 encoded, null terminated string.
 
-## Members
+### Members
 
 - `Size()` Will return the size in bytes the whole string occupies, including null terminator.
 - `Count()` Will return character count string holds, `str.Count()` will return number of ASCII chars + 1 for the null terminator, the same as `str.Size()`. `utf8.Count()` could return a smaller value than `utf8.Size()` as some characters can require more than one byte to represent it, but will also include the null terminator.
