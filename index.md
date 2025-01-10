@@ -10,3 +10,4 @@ Although Cy is a object oriented language, there is no requirement to use object
 
 - [Types](types.md)
 - [Classes](classes.md)
+- [Statements](statements.md)
