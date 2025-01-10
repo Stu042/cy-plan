@@ -2,4 +2,4 @@ title: Cy Language Model
 description: Syntax, semantics, and features of the Cy language.
 theme: minima
 minima:
-  skin: auto
+  skin: dark
