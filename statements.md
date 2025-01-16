@@ -69,10 +69,20 @@ for(i32 a = 0; a < 5; a++){
 
 ## Each
 
-Each gives us an interator over a collection.
+Each gives us an iterator over a collection.
 
 ```
 i32[] b = [1, 2, 3, 4]
 i32 a = each b
+i32 tot = a
+a.Next()
+tot += a
 ```
 
+```
+i32[] b = [1, 2, 3, 4]
+for(i32 a = each b; a.Exists(); a.Next()){
+	// do something
+}
+
+```
