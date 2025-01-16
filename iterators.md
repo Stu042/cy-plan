@@ -1,6 +1,6 @@
 #  Iterator
 
-Create an iterator using  the statement [`each`](statements.md#Each).
+Create an iterator using  the statement [`each`](statements.md#each).
 
 ```
 i32[] b = [1, 2, 3, 4]

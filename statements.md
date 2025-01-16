@@ -67,7 +67,7 @@ for(i32 a = 0; a < 5; a++){
 }
 ```
 
-## Each
+## Each {#each}
 
 Each gives us an iterator over a collection.
 
