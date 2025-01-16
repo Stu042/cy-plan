@@ -1,4 +1,5 @@
 # Home
+
 ## Aim
 
 Cy is a C like language - yes, yet another one. Its purpose is to provide easy to use, general purpose language that has built in multi-threading.

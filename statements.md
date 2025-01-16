@@ -1,6 +1,8 @@
 #  Statements
 
-## If
+[Home](index.md)
+
+## If {#if}
 
 `if` can be used with an expression for the usual condition check.
 
@@ -10,7 +12,7 @@ if(a==b) {
 }
 ```
 
-## Else
+## Else {#else}
 
 `else` also exists.
 
@@ -39,7 +41,7 @@ if(a==b) {
 }
 ```
 
-## While
+## While {#while}
 
 `while` loop until the condition is false.
 
@@ -57,7 +59,7 @@ Also:
 } while(a==b)
 ```
 
-## For
+## For {#for}
 
 For statement format:
 

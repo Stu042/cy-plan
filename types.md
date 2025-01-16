@@ -13,7 +13,7 @@
 - `Size()` Size in bytes this type uses, example usage `bool.Size()` will return 1 and `void.Size()` will return 0.
 
 
-## Numbers
+## Numbers {#numbers}
 
 | Name   | Type    | Size (in bytes) | Signed |
 |--------|---------|-----------------|--------|
@@ -29,7 +29,7 @@
 | `f32`  | float   | 4               | Yes    |
 | `f64`  | float   | 8               | Yes    |
 
-### Constants
+### Constants {#constants}
 
 - `Min` Minimum value this type holds, example usage `i8.Min` will return -127
 - `Max` Maximum value this type holds, example usage `i16.Max` will return 32767
@@ -39,7 +39,7 @@
 - `Size()` Size in bytes this type uses, example usage `i32.Size()` will return 4
 
 
-## Strings
+## Strings {#strings}
 
 - `str` ASCII encoded, null terminated string.
 - `utf8` UTF8 encoded, null terminated string.
