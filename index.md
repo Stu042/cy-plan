@@ -12,4 +12,13 @@ Although Cy is a object oriented language, there is no requirement to use object
 - [Types](types.md)
 - [Classes](classes.md)
 - [Statements](statements.md)
+- [Functions](functions.md)
 - [Iterators](iterators.md)
+
+
+## Notes
+
+- Members require an instance to work with.
+- Constants can work with an instance or a type.
+- Methods/Functions have a type, an identifier and must have at least `()` to denote they are functional components.
+
