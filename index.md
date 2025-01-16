@@ -14,6 +14,7 @@ Although Cy is a object oriented language, there is no requirement to use object
 - [Statements](statements.md)
 - [Functions](functions.md)
 - [Iterators](iterators.md)
+- [Multithreading](multithreading.md)
 
 
 ## Notes
