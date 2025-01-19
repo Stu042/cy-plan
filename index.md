@@ -26,7 +26,7 @@ Unit testing is built into the language, as well as the build environment.
 
 ## Notes
 
-- Syntatic sugar is deliberatly kept to a minimum, we might use it later to simplify common commands.
+- Syntatic sugar is deliberately kept to a minimum, we might use it later to simplify common commands.
 - Members and Methods require an instance to work with.
 - Constants can work with an instance or a type.
 - Methods/Functions have a type, an identifier and must have at least `()` to denote they are a functional component.
