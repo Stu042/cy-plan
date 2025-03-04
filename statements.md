@@ -60,7 +60,7 @@ Also:
 ```
 
 ```
-if (a==b) {         // no do here and we can do intersting things...
+if (a==b) {         // no `do` which means we can do interesting things...
 	// do something
 } while (a==b)
 ```
@@ -70,7 +70,7 @@ if (a==b) {         // no do here and we can do intersting things...
 For statement format:
 
 ```
-for (i32 a = 0; a < 5; a++) {
+for (mut i32 a = 0; a < 5; a++) {
 	// do something
 }
 ```

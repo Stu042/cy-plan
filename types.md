@@ -2,6 +2,13 @@
 
 [Home](index.md)
 
+## Important
+
+All types are immutable, unless prefixed with:`mut`. i.e.
+```
+i32 immutableInt
+mut i16 mutatableShortInt
+```
 
 ## Basic Types
 
