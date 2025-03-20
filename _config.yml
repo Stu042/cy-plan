@@ -1,4 +1,4 @@
 title: Cy Language Model
 description: Syntax, semantics, and features of the Cy language.
-remote_theme: amitmerchant1990/reverie
-baseurl: /cy-plan
+remote_theme: pages-themes/modernist@v0.2.0
+
