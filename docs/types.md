@@ -24,19 +24,21 @@ mut i16 mutatableShortInt
 
 ## Numbers {#numbers}
 
-| Name   | Type    | Size (in bytes) | Signed |
-|--------|---------|-----------------|--------|
-| `i8`   | integer | 1               | Yes    |
-| `i16`  | integer | 2               | Yes    |
-| `i32`  | integer | 4               | Yes    |
-| `i64`  | integer | 8               | Yes    |
-| `u8`   | integer | 1               | No     |
-| `u16`  | integer | 2               | No     |
-| `u32`  | integer | 4               | No     |
-| `u64`  | integer | 8               | No     |
-| `f16`  | float   | 2               | Yes    |
-| `f32`  | float   | 4               | Yes    |
-| `f64`  | float   | 8               | Yes    |
+| Name     | Type    | Size (in bytes) | Signed |
+|----------|---------|-----------------|--------|
+| `i8`     | integer | 1               | Yes    |
+| `i16`    | integer | 2               | Yes    |
+| `i32`    | integer | 4               | Yes    |
+| `int`    | integer | 4               | Yes    |
+| `i64`    | integer | 8               | Yes    |
+| `u8`     | integer | 1               | No     |
+| `u16`    | integer | 2               | No     |
+| `u32`    | integer | 4               | No     |
+| `u64`    | integer | 8               | No     |
+| `f16`    | float   | 2               | Yes    |
+| `f32`    | float   | 4               | Yes    |
+| `f64`    | float   | 8               | Yes    |
+| `float`  | float   | 8               | Yes    |
 
 ### Constants {#constants}
 
