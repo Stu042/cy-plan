@@ -12,6 +12,8 @@ mut i16 mutatableShortInt
 
 ## Basic Types
 
+- `int` a 32bit integer.
+- `float` a 64 bit floating point number.
 - `void` a non value, i.e. return nothing.
 - `bool` true or false value.
 
