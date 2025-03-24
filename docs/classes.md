@@ -42,7 +42,7 @@ config MyConfig {
 }
 ```
 
-Will have its properties set with a similarly named file:
+Will have its properties set with an appropriately named config file:
 my-config.settings.json
 
 ```
@@ -54,7 +54,7 @@ my-config.settings.json
 
 
 ## Transient {#transient}
-A standard class, but instances of this can be injected directly into your classes. Contains methods and properties.
+A standard class, but instances of this will be injected directly into your classes. Contains methods and properties.
 
 ```
 transient MyTransient {
@@ -75,8 +75,7 @@ transient MyTransient {
 transient MyOtherTransient {
     MyTransient MyTransient
 
-    MyOtherTransient(MyTransient myTransient) {
-        MyTransient = myTransient
+    MyOtherTransient() {    // No need to add as a parameter as MyTransient can only be injected.
     }
 }
 ```
@@ -90,8 +89,6 @@ Again a standard class but a single instance of this can be injected directly in
 
 A standard class, contains methods and properties. A factory must be used to create an instance of this class. Class is the assumed class type, and hence has no requirement for the name class.
 
-An unusal idiosyncrasy of class is the constructor has two input groups, the first is for user input and the second is for injected input. Only the first is required and can be empty.
-
 ```
 transient ATransient {
     i32 LargerInteger
@@ -102,11 +99,10 @@ MyClass {
     i32 LargerInteger
     ATransient ATransient
 
-    MyClass(i8 small, i32 larger)(ATransient aTransient) {
+    MyClass(i8 small, i32 larger) {
         return MyClass {
             SmallInteger = small,
             LargerInteger = larger,
-            ATransient = aTransient
         }
     }
 
@@ -120,9 +116,8 @@ transient MyOtherTransient {
     MyClass MyClass
     MyTransient MyTransient
 
-    MyTransient(MyClass myClass, MyTransient myTransient) {
+    MyTransient(MyClass myClass) {
         MyClass = myClass(1, 2)
-        MyTransient = myTransient
     }
 }
 ```
