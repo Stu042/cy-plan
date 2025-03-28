@@ -61,7 +61,7 @@ transient MyTransient {
     i8 SmallInteger
     i32 LargerInteger
 
-    MyTransient() {
+    MyTransient() {    // cant have any params here as this will be injected
         SmallInteger = 1
         LargerInteger = 100
     }
@@ -73,7 +73,7 @@ transient MyTransient {
 
 
 transient MyOtherTransient {
-    MyTransient MyTransient
+    MyTransient MyTransient    // injected
 
     MyOtherTransient() {    // No need to add as a parameter as MyTransient can only be injected.
     }
@@ -99,7 +99,7 @@ MyClass {
     i32 LargerInteger
     ATransient ATransient
 
-    MyClass(i8 small, i32 larger) {
+    MyClass(i8 small, i32 larger) {    // This is a factory create function and not a typical constructor
         return MyClass {
             SmallInteger = small,
             LargerInteger = larger,
@@ -111,7 +111,17 @@ MyClass {
     }
 }
 
+MyOtherClass {
+    MyClass MyClass
+    MyOtherClass(MyClass myClass) {
+        return MyOtherClass {
+            MyClass = myClass
+        }
+    }
+}
 
+
+// This is not possible, as MyClass would need to be injected, a transient cannot be created by the user onmly by Dependency Injection
 transient MyOtherTransient {
     MyClass MyClass
     MyTransient MyTransient
