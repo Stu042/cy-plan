@@ -94,16 +94,14 @@ transient ATransient {
     i32 LargerInteger
 }
 
-MyClass {
+class MyClass {
     i8 SmallInteger
     i32 LargerInteger
-    ATransient ATransient
+    ATransient ATransient               // this will be injected automatically
 
-    MyClass(i8 small, i32 larger) {    // This is a factory create function and not a typical constructor
-        return MyClass {
-            SmallInteger = small,
-            LargerInteger = larger,
-        }
+    MyClass(i8 small, i32 larger) {     // no need for ATransient here.
+        SmallInteger = small,
+        LargerInteger = larger,
     }
 
     i32 Add() {
@@ -111,17 +109,15 @@ MyClass {
     }
 }
 
-MyOtherClass {
+class MyOtherClass {
     MyClass MyClass
     MyOtherClass(MyClass myClass) {
-        return MyOtherClass {
-            MyClass = myClass
-        }
+        MyClass = myClass
     }
 }
 
 
-// This is not possible, as MyClass would need to be injected, a transient cannot be created by the user onmly by Dependency Injection
+// This is not possible, as MyOtherTransient will be injected and MyClass is only able to be created manually
 transient MyOtherTransient {
     MyClass MyClass
     MyTransient MyTransient
